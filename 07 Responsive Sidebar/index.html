@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="btn" onclick="toggleBtn()">
+        <span><i class="ri-menu-fill"></i></span>
+    </div>
+    <nav class="sidebar">
+        <div class="text">Side Menu</div>
+        <ul>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="" class="feature-btn">Features</a></li>
+            <li><a href="" class="service-btn">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Overview</a></li>
+            <li><a href="">Shortcuts</a></li>
+            <li><a href="">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const btn = document.querySelector('.btn');
+        const btnSpan = document.querySelector('.btn span');
+        const sidebar = document.querySelector('.sidebar');
+
+        function toggleBtn() {
+            btn.classList.toggle('click')
+            sidebar.classList.toggle('show')
+        }
+    </script>
+</body>
+
+</html>

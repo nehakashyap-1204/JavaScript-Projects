@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<style>
+    *{
+        color: black;
+    }
+    /* Basic sidebar styling */
+    .users-pannel {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        background: #333;
+        color: #fff;
+        transition: left 0.3s ease;
+    }
+
+    .users-pannel.show {
+        left: 0;
+    }
+
+    /* Menu icon */
+    .menu-icon {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #333;
+    }
+</style>
+
+<body>
+    <div class="menu-icon" onclick="toggleSidebar()">
+        <span><i class="ri-menu-line"></i>
+    </div>
+    <div class="users-pannel">
+        <!-- Sidebar content here -->
+        <ul>
+            <li>Hi</li>
+            <li>Hello</li>
+            <li>Namaste</li>
+            <li>How r u</li>
+            <li>Km chho</li>
+        </ul>
+    </div>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon i'); // Target the icon inside the menu
+        const usersPannel = document.querySelector('.users-pannel'); // Sidebar panel
+
+        function toggleSidebar() {
+            // Toggle the sidebar visibility
+            usersPannel.classList.toggle('show');
+
+            // Toggle the icon between menu and close
+            if (usersPannel.classList.contains('show')) {
+                menuIcon.classList.remove('ri-menu-line');
+                menuIcon.classList.add('ri-close-large-line');
+            } else {
+                menuIcon.classList.remove('ri-close-large-line');
+                menuIcon.classList.add('ri-menu-line');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
