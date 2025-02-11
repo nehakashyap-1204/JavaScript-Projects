@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", serif;
+}
+
+body {
+    background: #022c43;
+    text-align: center;
+    color: #feffe0;
+}
+
+main h1{
+    margin: 20px;
+}
+.container {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 33vmin;;
+    width: 40vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.box {
+    height: 10vmin;
+    width: 10vmin;
+    font-size: 5vmin;
+    color: #022c43;
+    background: #fff;
+    font-weight: 500;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.reset-btn {
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    border-radius: 14px;
+    background: #feffe0;
+    margin-left: 10px;
+}
+
+.reset-btn:hover {
+    background: #eeeeee;
+
+}
+
+.newGame-btn {
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    border-radius: 14px;
+    background: #feffe0;
+    margin-left: 10px;
+}
+
+#msg{
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.hide{
+    display: none;
+}
